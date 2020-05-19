@@ -1,0 +1,104 @@
+% DOCUMENT FORMATING
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{blindtext}
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+% ----------
+% TITLES AND NAMES 
+% ----------
+
+\newcommand{\MyCourse}{Math 412}
+\newcommand{\MyTopicTitle}{Division Algorithm}
+\newcommand{\MyAssignment}{Abstract Algebra}
+\newcommand{\MySemester}{Fall 2020}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+
+\begin{document}
+\subsection*{Key Terms}
+\begin{itemize}
+    \item Well Ordering Axiom \newline 
+    every nonempty subset of the set of positive integers contains smallest element 
+    \item Prime \newline 
+    an integer is considered prime if the only divisors are $\pm 1$ and $\pm$ itself
+    \item Relatively Prime \newline 
+    two integers whose GCD is 1 
+\end{itemize}
+\subsection*{Theorems}
+\begin{theorem*}
+Division Algorithm \newline 
+Let a,b be integers with $b > 0$. Then there $\exists q$ and r $\in \mathbb{Z}$ such that a = bq + r. where $0 \geq r < b$
+\end{theorem*}
+\begin{theorem*}
+Fundamental Theorem of Arithmetic \newline 
+$\forall n \in \mathbb{Z}$ except 0 is a product of primes
+\end{theorem*}
+\begin{theorem*}
+Let $n > 1$. If n has no positive prime factors less than or equal to $\sqrt{n}$ then n is prime
+\end{theorem*}
+\subsection*{Practice Problems}
+\begin{enumerate}
+    \item Find the quotient q and remainder r when a is divided by b w/o the usage of technology
+    \begin{itemize}
+        \item[(a)] a = 17 b = 4
+        \vspace{2cm}
+        \item[(b)] a = -51 and b = 6 
+       \vspace{2cm}
+        
+    \end{itemize}
+    \item Let a be any integer and let b and c be any integer divided by b, the quotient be q,and the remainder be r, so that 
+    \begin{equation*}
+        a = bq + r;  0 \geq r < b
+    \end{equation*}
+   \clearpage
+    \item Find the GCD 
+    \begin{itemize}
+        \item[(a)] (56,72) 
+    \vspace{2cm}
+        \item[(b)] (143, 231) 
+     \vspace{2cm}
+    \end{itemize}
+   \item Express the numbers as a product of primes 
+   \begin{itemize}
+       \item[(a)] 5040 
+       \vspace{3cm}
+       \item[(b)] 2042040
+   \end{itemize}
+   \item Which of the following are prime 
+   \begin{itemize}
+       \item[a)] $2^{5} - 1$
+        \vspace{3cm}
+       \item[b)] 1951 
+   
+       
+   \end{itemize}
+\end{enumerate}
+
+\end{document}
