@@ -1,0 +1,30 @@
+.ui.menu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: cyan;
+}
+.item {
+  font-size: 15px;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+p {
+  font-size: 15px;
+}
+
+footer p {
+  text-align: center;
+}
+hr {
+  color: gray;
+}
+
+.white {
+  background-color: white;
+}
+footer {
+  background-color: cyan;
+}
