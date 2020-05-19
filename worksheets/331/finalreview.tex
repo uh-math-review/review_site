@@ -1,0 +1,157 @@
+% DOCUMENT FORMATING
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{blindtext}
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage[ruled,vlined]{algorithm2e}
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+% ----------
+% TITLES AND NAMES 
+% ----------
+
+\newcommand{\MyCourse}{MATH 331}
+\newcommand{\MyTopicTitle}{Final Exam Guide}
+\newcommand{\MyAssignment}{Introduction to Real Analysis}
+\newcommand{\MySemester}{Spring 2020}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+\begin{document}
+\subsection*{Key Terms}
+\begin{itemize}
+    \item Partition 
+    \item Integrable
+    \item Least Upper Bound Property 
+    \item supremum 
+    \item infrimum 
+    \item sequence 
+    \item convergence
+    \item neighborhood 
+    \item cauchy sequence 
+    \item accumulation points 
+    \item Bolzano Weiestrass Theorem 
+    \item Sequential Limit Theorem 
+    \item sub-sequence 
+    \item monotone 
+    \item increasing 
+    \item decreasing 
+    \item limits 
+    \item continuity 
+    \item uniform continuity 
+    \item open 
+    \item closed 
+    \item compact 
+    \item Heine Borel Theorem 
+    \item Extreme Value Theorem 
+    \item Bolzano's Theormem 
+    \item connected 
+    \item Intermediate Value Theorem 
+    \item differentiable 
+    \item Chain Rule 
+    \item relative maximum 
+    \item Rolle's Theorem 
+    \item Mean Value Theorem 
+    \item Cauchy Mean Value Theorem 
+    \item L'Hospital's Rule 
+    \item partition 
+    \item integrable 
+\end{itemize}
+\subsubsection*{Sample Problems}
+\begin{enumerate}
+    \item Let the sequence ($a_n$) converge to A and $(b_n - a_n)$ converge to 0. Using the $\epsilon$ and N argument show that ($b_n$) converges to A. 
+    \item Using $\epsilon-N$ argument prove that the sequence $(\frac{n}{2n+1})_{n=1}^{\infty}$ converges and find its limit.
+    \item Define what it means for the sequence $\{a_n\}^\infty_{n=1}$ to converge to a real number $A$.
+    \item Suppose f: [a,b] $\to \mathbb{R}$ is a bounded function. 
+    \begin{itemize}
+        \item Define what it means for P to be a partition of [a,b]
+        \item Define a Lower Sum L(P,f)
+        \item Define a Upper Sum U(P,f)
+        \item Define the lower integral of f
+        \item Define the upper integral of f 
+        \item Define what it means for a function to be integrable 
+    \end{itemize}
+    \item State the following theorems 
+    \begin{itemize}
+        \item Mean Value Theorem
+        \item Extreme Value Theorem
+        \item Intermediate Value Theorem 
+        \item Rolle's Theorem 
+    \end{itemize}
+    \item Give an example of an open cover of the set [1,5) that has no finite subcover 
+    \item Define f: $\mathbb{R} \to \mathbb{R}$ by f(x) = $x^{2} - 5$. Use $\epsilon-\delta$ definition to prove that $\lim_{x \to 1} f(x) = -4$ 
+    \item State one of the Theorems that gives a necessary and sufficient condition for f to be Riemann integrable on the interval [a,b].
+    \item Suppose E $\subset \mathbb{R}$ is nonempty and that $E \cap [0,1] = \empty$
+    \begin{itemize}
+        \item Is it possible that the $\sup E = 0$
+        \item Is it possible that the $\sup E = 1$
+    \end{itemize}
+    \item Suppose f:[0,2] $\to \mathbb{R}$ is defined by f(x) = 1 - $x^2$
+    \begin{itemize}
+        \item Explain how you can be sure that $f \in \mathbf{R}[0,2]$.
+        \item For P the partition of [0,2] given by P = $\{0,0.5,1,2\}$ compute L(P,f)
+    \end{itemize}
+    \item Give the definitions of the following words 
+    \begin{itemize}
+        \item differentiable 
+        \item uniformly continuous
+        \item continuous 
+        \item closed 
+        \itme open 
+        \item compact 
+    \end{itemize}
+    \item Prove that $g(x) = x
+^3 + x - 1$ has at least one root which lies in the open interval
+(0, 1).
+    \item Prove that if f: $[a,b] \to \mathbb{R}$ is continuous, then f is Riemann integrable on [a,b]. 
+    \item Prove that every Convergent Sequence is Cauchy 
+    \item Answer these questions regarding to compact sets:
+    \begin{itemize}
+        \item State the Heine Borel Theorem 
+        \item $\{-1,0,1\}$: Is it compact?
+        \item $\{0\} \cup (1,4]$ Is it compact?
+        \item $\{ \frac{1}{n}: n \in \mathbb{N}\}$ Is it compact?
+    \end{itemize}
+    \item The following Statement is false. Explain why. \newline 
+    There is a function $f \in \mathbf{R}(x)$ on [-1,1] and a partition P of [-1,1] such that L(P,f) = 1 and U(P,f) = 2 and $\int_{-1}^{1} f(x) dx = 3$
+    \item State True (T) or False (F) for the following: 
+\begin{itemize}
+    \item If A is a non-empty and compact set of real numbers then A contains inf A and sup A. 
+    \item If f:(2,10) $\to \mathbb{R}$ is uniformly continuous, then it is bounded 
+    \item If A and B are compact sets of real numbers then so is $A \cup B$
+    \item If A and B are open sets of real numbers then so is $A \cup B$
+    \item Every monotone sequence of real numbers converges.
+    \end{itemize}
+       \item Define a function f: $\mathbb{R} \to \mathbb{R}$
+\[ \begin{cases} 
+      0 & if x \in \mathbb{Q} \\
+      x^{2} & if x \not \in \mathbb{Q} \\
+   \end{cases}
+\]
+(a) Is f continuous at x = 0? Justify your answer. (Justification based on definition will receive the most points) 
+\newline
+(b) Is f differentiable at x = 0? Justify your answer.
+
+\end{enumerate}
+\end{document}
