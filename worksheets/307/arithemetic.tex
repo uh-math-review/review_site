@@ -1,0 +1,107 @@
+% DOCUMENT FORMATING
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+% PACKAGES
+\usepackage{amsmath} % For extended formatting
+\usepackage{amssymb} % For math symbols
+\usepackage{amsthm} % For proof environment
+\usepackage{array} % For tables
+\usepackage{enumerate} % For lists
+\usepackage{extramarks} % For headers and footers
+\usepackage{blindtext}
+\usepackage{fancyhdr} % For custom headers
+\usepackage{graphicx} % For inserting images
+\usepackage{multicol} % For multiple columns
+\usepackage{verbatim} % For displaying code
+\usepackage{tkz-euclide}
+\usepackage{pgfplots}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% SET UP HEADER AND FOOTER
+\pagestyle{fancy}
+\lhead{\MyCourse} % Top left header
+\chead{\MyTopicTitle} % Top center header
+\rhead{\MyAssignment} % Top right header
+\lfoot{\MyCampus} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{\MySemester} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+% ----------
+% TITLES AND NAMES 
+% ----------
+
+\newcommand{\MyCourse}{Math 307}
+\newcommand{\MyTopicTitle}{Matrix Arithmetic }
+\newcommand{\MyAssignment}{Linear Algebra and Diff. Eq}
+\newcommand{\MySemester}{Fall 2020}
+\newcommand{\MyCampus}{University of Hawaii at Manoa}
+
+\begin{document}
+\subsection*{Problems}
+\begin{enumerate}
+    \item Let A = $ \begin{bmatrix}
+1 & 2 \\
+0 & 4 \\
+\end{bmatrix}$
+B = $\begin{bmatrix}
+2 & 1 \\
+3 & 1 \\
+\end{bmatrix}$
+and C = $ \begin{bmatrix}
+3 \\
+5 \\
+\end{bmatrix}$
+Then if possible do these following operations 
+\begin{itemize}
+    \item[a)] A + B 
+    \vspace{3cm}
+    \item[b)] 3A - 2C
+    \vspace{3cm}
+    \item[c)] AC
+    \vspace{3cm}
+    \item[d)] CA 
+    \vspace{3cm}
+\end{itemize}
+Perform the following matrix operation if possible.
+\item $ \begin{bmatrix} 
+2 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 4 \\
+\end{bmatrix}
+ \begin{bmatrix} 
+1 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 1 \\
+\end{bmatrix} = $
+\clearpage
+\item $
+\begin{bmatrix}
+2 & 4 \\
+0 & -1 \\
+\end{bmatrix}
+\begin{bmatrix}
+2 & 0 \\
+1 & -1 \\
+\end{bmatrix}
+ = $
+ \vspace{3cm}
+ \item $
+\begin{bmatrix}
+2 & 4 \\
+0 & -1 \\
+\end{bmatrix}
++ \begin{bmatrix}
+1 & 0 & 0 \\
+3 & 1 & 0 \\
+\end{bmatrix}
+ = $
+ \vspace{3cm}
+ 
+\end{enumerate}
+
+\end{document}
